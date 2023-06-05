@@ -1,1 +1,3 @@
-include 'React-frontend', 'springboot-backend'
+include ':React-frontend', ':backend'
+
+
