@@ -3,6 +3,7 @@ apply plugin: "io.spring.dependency-management"
 apply plugin: "java"
 ---
 		dependencies {
+			implementation 'org.springframework.boot:spring-boot-starter-web'
 			---
 					runtimeOnly project(‘:frontend’)
 			---
@@ -13,5 +14,13 @@ task copyWebApp(type: Copy) {
 	into “$rootDir/backend/build/resources/main/static/.”
 }
 
-bootJar.dependsOn(copyWebApp)
-compileJava.dependsOn “:frontend:build”
+bootJar {
+	mainClassName = 'com.example.Javabackend'
+}
+
+
+dependsOn(':frontend:npmBuild')
+from('frontend/build') {
+	into 'static'
+}
+
