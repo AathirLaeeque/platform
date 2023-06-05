@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7955823-3128-40ec-bd45-07a621d204bf" name="Changes" comment="">
+    <list default="true" id="e7955823-3128-40ec-bd45-07a621d204bf" name="Changes" comment="added-settings.gradlefile">
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/springboot-backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/springboot-backend/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +71,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\OFFICE\IdeaProjects\platform-poc\Project1\springboot-backend" />
       <recent name="C:\Users\OFFICE\IdeaProjects\platform-poc" />
     </key>
   </component>
@@ -111,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685948309370</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="renamedtofrontend">
+      <created>1685949004716</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685949004716</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +146,8 @@
     <MESSAGE value="Reactjava" />
     <MESSAGE value="build" />
     <MESSAGE value="Latestcommit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Latestcommit" />
+    <MESSAGE value="renamedtofrontend" />
+    <MESSAGE value="added-settings.gradlefile" />
+    <option name="LAST_COMMIT_MESSAGE" value="added-settings.gradlefile" />
   </component>
 </project>

@@ -1,26 +1,42 @@
 plugins {
+	id 'org.springframework.boot' version '2.5.0'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
-	id 'org.springframework.boot' version '3.0.8-SNAPSHOT'
-	id 'io.spring.dependency-management' version '1.1.0'
+	id 'com.moowork.node' version '1.4.1'
 }
 
 group = 'backend.example'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+version = '1.0'
+sourceCompatibility = '1.8'
 
 repositories {
 	mavenCentral()
-	maven { url 'https://repo.spring.io/milestone' }
-	maven { url 'https://repo.spring.io/snapshot' }
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-tasks.named('test') {
-	useJUnitPlatform()
+node {
+	version = '14.17.0'
+	npmVersion = '6.14.13'
+}
+
+task npmInstall(type: NpmTask) {
+	description = 'Install Node.js dependencies'
+	command = 'install'
+	workingDir = file('../frontend')
+}
+
+task npmBuild(type: NpmTask, dependsOn: npmInstall) {
+	description = 'Build the React app'
+	command = 'run build'
+	workingDir = file('../frontend')
+}
+
+bootJar {
+	dependsOn(':backend:npmBuild')
+	from(file('../frontend/build')) {
+		into 'static'
+	}
 }
