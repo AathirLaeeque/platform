@@ -1,26 +1,17 @@
-plugins {
-	id 'java'
-	id 'org.springframework.boot' version '3.0.8-SNAPSHOT'
-	id 'io.spring.dependency-management' version '1.1.0'
+apply plugin: "org.springframework.boot"
+apply plugin: "io.spring.dependency-management"
+apply plugin: "java"
+---
+		dependencies {
+			---
+					runtimeOnly project(‘:frontend’)
+			---
+		}
+
+task copyWebApp(type: Copy) {
+	from “$rootDir/frontend/build”
+	into “$rootDir/backend/build/resources/main/static/.”
 }
 
-group = 'com.example'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
-
-repositories {
-	mavenCentral()
-	maven { url 'https://repo.spring.io/milestone' }
-	maven { url 'https://repo.spring.io/snapshot' }
-}
-
-dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-}
-
-tasks.named('test') {
-	useJUnitPlatform()
-}
+bootJar.dependsOn(copyWebApp)
+compileJava.dependsOn “:frontend:build”
