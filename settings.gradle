@@ -1,2 +1,3 @@
-include 'Project'
+rootProject.name = 'platform-poc'
+include ':frontend', ':backend'
 
