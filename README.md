@@ -1,4 +1,4 @@
 GradleMultiExample
 ==================
 Aathir Laeeque
-Gradle multi project running maven, node and java.
+Gradle multi project running React frontend and JAVA backend.
