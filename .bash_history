@@ -522,3 +522,4 @@ rm -rf .cache/
 gradle -v
 clear
 ls
+gradle -v

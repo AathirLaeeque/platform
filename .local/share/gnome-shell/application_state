@@ -4,17 +4,17 @@
     <application id="org.gnome.gedit.desktop" score="0" last-seen="1686561475"/>
     <application id="org.gnome.FileRoller.desktop" score="8" last-seen="1686564463"/>
     <application id="gnome-session-properties.desktop" score="1" last-seen="1686331868"/>
-    <application id="google-chrome.desktop" score="293" last-seen="1686564474"/>
+    <application id="google-chrome.desktop" score="294" last-seen="1686564967"/>
     <application id="snap-store_snap-store.desktop" score="15" last-seen="1686332161"/>
     <application id="org.gnome.Shell.PortalHelper.desktop" score="5" last-seen="1686554276"/>
     <application id="org.gnome.Calendar.desktop" score="0" last-seen="1686331841"/>
     <application id="update-manager.desktop" score="1" last-seen="1686331870"/>
-    <application id="org.gnome.Nautilus.desktop" score="24" last-seen="1686564460"/>
+    <application id="org.gnome.Nautilus.desktop" score="24" last-seen="1686564948"/>
     <application id="org.gnome.Totem.desktop" score="3" last-seen="1686298555"/>
     <application id="xdg-desktop-portal-gnome.desktop" score="0" last-seen="1686332084"/>
-    <application id="code_code.desktop" score="40" last-seen="1686564684"/>
+    <application id="code_code.desktop" score="90" last-seen="1686565148"/>
     <application id="gnome-initial-setup.desktop" score="2" last-seen="1686298350"/>
-    <application id="org.gnome.Terminal.desktop" score="1190" last-seen="1686564700"/>
+    <application id="org.gnome.Terminal.desktop" score="1197" last-seen="1686565147"/>
     <application id="gnome-control-center.desktop" score="1" last-seen="1686561511"/>
     <application id="firefox_firefox.desktop" score="65" last-seen="1686332168"/>
     <application id="slack_slack.desktop" score="6" last-seen="1686298492"/>
