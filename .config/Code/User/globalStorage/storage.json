@@ -2,8 +2,9 @@
     "userDataProfilesMigration": true,
     "profileAssociations": {
         "workspaces": {
+            "file:///home/aathir": "__default__profile__",
             "file:///home/aathir/platform-poc": "__default__profile__",
-            "file:///home/aathir": "__default__profile__"
+            "file:///home/aathir/platform-poc/backendJava": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -13,7 +14,10 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/aathir"
+                "folderUri": "file:///home/aathir/platform-poc"
+            },
+            {
+                "folderUri": "file:///home/aathir/platform-poc/backendJava"
             }
         ],
         "emptyWindows": []
@@ -65,12 +69,12 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/aathir",
-                                        "path": "/home/aathir",
+                                        "external": "file:///home/aathir/platform-poc/backendJava",
+                                        "path": "/home/aathir/platform-poc/backendJava",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "/home/aathir"
+                                    "label": "~/platform-poc/backendJava"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -82,6 +86,17 @@
                                     },
                                     "enabled": true,
                                     "label": "~/platform-poc"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/aathir",
+                                        "path": "/home/aathir",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/aathir"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -323,13 +338,11 @@
                     },
                     {
                         "id": "actions.find",
-                        "label": "&&Find",
-                        "enabled": false
+                        "label": "&&Find"
                     },
                     {
                         "id": "editor.action.startFindReplaceAction",
-                        "label": "&&Replace",
-                        "enabled": false
+                        "label": "&&Replace"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -689,6 +702,10 @@
                         "label": "E&&xtensions"
                     },
                     {
+                        "id": "workbench.view.extension.test",
+                        "label": "T&&esting"
+                    },
+                    {
                         "id": "vscode.menubar.separator"
                     },
                     {
@@ -712,8 +729,7 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap",
-                        "enabled": false
+                        "label": "&&Word Wrap"
                     },
                     {
                         "id": "editor.action.toggleStickyScroll",
@@ -1649,8 +1665,8 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/aathir",
-            "backupPath": "/home/aathir/.config/Code/Backups/4e0884f01796a23fa92ceca6bc4dc1e7",
+            "folder": "file:///home/aathir/platform-poc",
+            "backupPath": "/home/aathir/.config/Code/Backups/a263df304c78d1ed7da36f4f07947583",
             "uiState": {
                 "mode": 0,
                 "x": 448,
@@ -1659,6 +1675,29 @@
                 "height": 768
             }
         },
-        "openedWindows": []
+        "openedWindows": [
+            {
+                "folder": "file:///home/aathir/platform-poc",
+                "backupPath": "/home/aathir/.config/Code/Backups/a263df304c78d1ed7da36f4f07947583",
+                "uiState": {
+                    "mode": 0,
+                    "x": 448,
+                    "y": 267,
+                    "width": 1024,
+                    "height": 768
+                }
+            },
+            {
+                "folder": "file:///home/aathir/platform-poc/backendJava",
+                "backupPath": "/home/aathir/.config/Code/Backups/555697a6cfb7a8fde145bc27fe3d725f",
+                "uiState": {
+                    "mode": 1,
+                    "x": 448,
+                    "y": 193,
+                    "width": 1024,
+                    "height": 768
+                }
+            }
+        ]
     }
 }
