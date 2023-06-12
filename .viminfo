@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :q
-|2,0,1686560365,,"q"
+|2,0,1686563606,,"q"
 :q!
 |2,0,1686557390,,"q!"
 :wq!
@@ -31,24 +31,30 @@
 # Registers:
 
 # File marks:
-'0  1  0  /var/cache/apt/archives/archives
-|4,48,1,0,1686560365,"/var/cache/apt/archives/archives"
-'1  1  50  /etc/profile.d/nodejs.sh
-|4,49,1,50,1686557930,"/etc/profile.d/nodejs.sh"
+'0  1  0  ~/.gitignore
+|4,48,1,0,1686563606,"~/.gitignore"
+'1  1  0  /var/cache/apt/archives/archives
+|4,49,1,0,1686560365,"/var/cache/apt/archives/archives"
 '2  1  50  /etc/profile.d/nodejs.sh
-|4,50,1,50,1686557390,"/etc/profile.d/nodejs.sh"
-'3  1  28  /etc/profile.d/nodejs.sh
-|4,51,1,28,1686557291,"/etc/profile.d/nodejs.sh"
+|4,50,1,50,1686557930,"/etc/profile.d/nodejs.sh"
+'3  1  50  /etc/profile.d/nodejs.sh
+|4,51,1,50,1686557390,"/etc/profile.d/nodejs.sh"
 '4  1  28  /etc/profile.d/nodejs.sh
 |4,52,1,28,1686557291,"/etc/profile.d/nodejs.sh"
-'5  3  18  ~/nodesource_setup.sh
-|4,53,3,18,1686556271,"~/nodesource_setup.sh"
-'6  1  0  ~/nodesource_setup.sh
-|4,54,1,0,1686556228,"~/nodesource_setup.sh"
+'5  1  28  /etc/profile.d/nodejs.sh
+|4,53,1,28,1686557291,"/etc/profile.d/nodejs.sh"
+'6  3  18  ~/nodesource_setup.sh
+|4,54,3,18,1686556271,"~/nodesource_setup.sh"
 '7  1  0  ~/nodesource_setup.sh
 |4,55,1,0,1686556228,"~/nodesource_setup.sh"
+'8  1  0  ~/nodesource_setup.sh
+|4,56,1,0,1686556228,"~/nodesource_setup.sh"
 
 # Jumplist (newest first):
+-'  1  0  ~/.gitignore
+|4,39,1,0,1686563606,"~/.gitignore"
+-'  1  0  /var/cache/apt/archives/archives
+|4,39,1,0,1686560365,"/var/cache/apt/archives/archives"
 -'  1  0  /var/cache/apt/archives/archives
 |4,39,1,0,1686560365,"/var/cache/apt/archives/archives"
 -'  1  50  /etc/profile.d/nodejs.sh
@@ -56,6 +62,14 @@
 -'  1  50  /etc/profile.d/nodejs.sh
 |4,39,1,50,1686557930,"/etc/profile.d/nodejs.sh"
 -'  1  50  /etc/profile.d/nodejs.sh
+|4,39,1,50,1686557930,"/etc/profile.d/nodejs.sh"
+-'  1  50  /etc/profile.d/nodejs.sh
+|4,39,1,50,1686557930,"/etc/profile.d/nodejs.sh"
+-'  1  50  /etc/profile.d/nodejs.sh
+|4,39,1,50,1686557390,"/etc/profile.d/nodejs.sh"
+-'  1  50  /etc/profile.d/nodejs.sh
+|4,39,1,50,1686557390,"/etc/profile.d/nodejs.sh"
+-'  1  50  /etc/profile.d/nodejs.sh
 |4,39,1,50,1686557390,"/etc/profile.d/nodejs.sh"
 -'  1  50  /etc/profile.d/nodejs.sh
 |4,39,1,50,1686557390,"/etc/profile.d/nodejs.sh"
@@ -63,6 +77,42 @@
 |4,39,1,28,1686557291,"/etc/profile.d/nodejs.sh"
 -'  1  28  /etc/profile.d/nodejs.sh
 |4,39,1,28,1686557291,"/etc/profile.d/nodejs.sh"
+-'  1  28  /etc/profile.d/nodejs.sh
+|4,39,1,28,1686557291,"/etc/profile.d/nodejs.sh"
+-'  1  28  /etc/profile.d/nodejs.sh
+|4,39,1,28,1686557291,"/etc/profile.d/nodejs.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
+-'  3  18  ~/nodesource_setup.sh
+|4,39,3,18,1686556271,"~/nodesource_setup.sh"
 -'  3  18  ~/nodesource_setup.sh
 |4,39,3,18,1686556271,"~/nodesource_setup.sh"
 -'  3  18  ~/nodesource_setup.sh
@@ -127,6 +177,48 @@
 |4,39,1,0,1686556258,"~/nodesource_setup.sh"
 -'  1  0  ~/nodesource_setup.sh
 |4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556258,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556228,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556228,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556228,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556228,"~/nodesource_setup.sh"
+-'  1  0  ~/nodesource_setup.sh
+|4,39,1,0,1686556228,"~/nodesource_setup.sh"
 -'  1  0  ~/nodesource_setup.sh
 |4,39,1,0,1686556228,"~/nodesource_setup.sh"
 -'  1  0  ~/nodesource_setup.sh
@@ -161,6 +253,10 @@
 |4,39,1,0,1686556228,"~/nodesource_setup.sh"
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitignore
+	*	1686563605	0
+	"	1	0
 
 > /var/cache/apt/archives/archives
 	*	1686560364	0
