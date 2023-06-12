@@ -523,3 +523,321 @@ gradle -v
 clear
 ls
 gradle -v
+./gradlew backend:bootRun
+gradle build
+sudo apt install gradle
+gradle build
+./gradlew backendJava:bootRun
+gradle wrapper
+gradle wrapperclear
+ls
+git add -A
+git commit -m "new files pushed"
+git push --all origin
+gradle wrapper
+gradle --version
+sudo apt install git -y
+
+node -v
+sudo apt install git -y
+sudo apt install npm -y
+sudo apt update -y
+sudo apt-get install -f nodejs npm -y
+sudo apt --fix-broken install
+sudo apt clean
+sudo apt remove nodejs npm
+sudo apt install nodejs
+cd var/
+cd/var/
+cd /var/
+ls
+cd cache/
+ls
+cd apt
+cd archives/
+ls
+rm -rf nodejs_14.21.3-deb-1nodesource1_amd64.deb
+sudo chmod +x nodejs_14.21.3-deb-1nodesource1_amd64.deb
+sudo rm nodejs_14.21.3-deb-1nodesource1_amd64.deb
+ls
+cd partial/
+sudo chmod +x partial/
+cd partial/
+ls
+cd ..
+sudo chmod +r partial/
+sudo chmod +w partial/
+cd partial/\ls
+cd partial/
+ls
+clear
+cd
+sudo apt install nodejs
+cd
+sudo apt remove nodejs libnode72:amd64
+sudo apt clean
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt install nodejs
+node -v
+clear
+sudo apt install npm -y
+clear
+ls -a
+sudo rm -rf .npm
+ls -a
+sudo apt install npm -y
+clear
+npm
+npx create-react-app frontend
+ls
+rm -rf frontend
+ls
+git init 
+ssh -T git@github.com
+sudo apt install npm -y
+sudo apt remove npm -y
+sudo apt install npm -y
+clear
+git pull
+cat .git/config
+git pull origin main
+ls
+cd platform-poc/
+ls
+rm -rf *
+npx create-react-app frontend
+npm start
+cd
+sudo apt install npm
+sudo apt remove npm
+sudo apt autoremove npm
+sudo apt clean
+sudo apt update
+sudo apt --fix-broken install
+sudo apt upgrade
+sudo apt install npm
+sudo apt install nodejs
+sudo apt clean
+sudo apt install aptitude
+sudo aptitide install npm
+sudo aptitude install npm
+npm -v
+clear
+ls
+cd platform-poc/
+ls
+rm -rf frontend/
+npx create-react-app frontend
+npm start
+npm run 
+npm start
+cd frontend/
+npm start
+cd ..
+clear
+cd ..
+git push --force
+git push --set-upstream origin main
+git push --all origin
+git push --all origin --force
+ls
+git add -A
+git commit -m "ProjectNew"
+git add -A
+git commit -m "ProjectNew"
+git push --all origin 
+clear
+cd platform-poc/
+git push --all origin 
+git push 
+git push -u origin main
+git push -u origin 
+git branch
+git checkout -b main
+git branch
+git push -u origin main
+ls -a 
+cd .
+ls
+CLEAR
+clear
+cd ..
+git push platform-poc/
+git push --all origin main platform-poc/
+cd platform-poc/
+ls
+cd
+ls -a
+cd .git
+ls
+cd
+vim .gitignore
+sudo -i
+ls
+cd platform-poc/
+code .
+git pull origin main
+sudo -i
+cat .ssh/id_rsa.pub
+ls -a
+cd
+cat .ssh/id_rsa.pub
+git pull origin main
+ls
+cd platform-poc/
+ls
+git push --all origin
+clear
+ls
+cd ..
+code .
+touch .gitignore
+ls
+cd platform-poc/
+ls 
+cd
+gradle -v
+sudo apt install gradle 
+clear
+cd platform-poc/
+ls
+git pull
+ls
+git pull --force
+git add -A
+git commit -m "check"
+git push
+git push --force
+ls -a
+rm -rf *
+ls -a
+git pull
+ls
+git add -A
+git commit -m "NA"
+git pull
+git push
+git branch
+git checkout master
+ls
+git push --all origin 
+git branch
+git push --all origin 
+git add -A
+git commit -m "NA"
+git push origin main
+ls
+ls -a
+clear
+ls
+npx create-react-app frontend
+cd frontend/
+npm start
+npm run build
+ls 
+cd ..
+git add -A
+git commit -m "frontend"
+git push origin main
+ls
+git add -A
+git commit -m "backend"
+git push origin main
+code .
+cd
+mkdir -p /opt/gradle/
+ls
+cd opt
+mkdir opt
+ls
+cd opt 
+mkdir gradle
+ls
+cd gradle/
+ls
+cd ..
+cd gradle/
+cd gradle-8.0/
+cd ..
+mv gradle-8.0/ /opt
+chmod +x gradle-8.0/
+mv gradle-8.0/ /opt
+cd ..
+chmod +x opt
+chmod +x opt/
+cd ..
+chmod +x opt/
+cd opt 
+ls
+mv gradle-8.0/ /opt
+cd gradle
+mv gradle-8.0/ ../
+cd ..
+ls
+rm gradle
+rm -rf gradle
+ls
+cd gradle-8.0/
+ls
+clear
+cd
+export PATH=$PATH:/opt/gradle-8.0/bin
+gradle -v
+exit
+gradle build
+gradle wrapper
+cd ..
+gradle -v
+gradle build 
+java --version
+sdk install gradle 8.0
+gradle -v
+[200~$ ./gradlew wrapper --gradle-version=8.1.1 --distribution-type=bin
+$ ./gradlew wrapper --gradle-version=8.0 --distribution-type=bin
+./gradlew wrapper --gradle-version=8.0 --distribution-type=bin
+gradle wrapper
+clear
+sudo apt upgrade gradle -y
+sudo apt update -y
+apt list --upgradable
+sudo apt upgrade 
+sudo apt upgrade fwupd
+sudo apt upgrade libfwupd2
+sudo apt upgrade libfwupdplugin5
+sudo apt upgrade 
+clear
+gradle -v
+ls
+cd downloads
+cd Do
+cd Downloads/
+ls
+cd
+clear
+export PATH=$PATH:/opt/gradle-8.0/bin
+ls
+gradle -v
+reboot
+gradle -v
+printenv
+export PATH=$PATH:/opt/gradle-8.0/bin
+printenv
+gradle -v
+sudo apt remove gradle 
+gradle -v
+clear
+ls
+cd Downloads/
+ls
+cd
+cd opt 
+ls
+cd gradle-8.0/
+ls
+cd
+sudo vim /etc/profile.d/gradle.sh
+sudo chmod +x /etc/profile.d/gradle.sh
+source /etc/profile.d/gradle.sh
+gradle --version
+exit

@@ -1,9 +1,6 @@
-2023/06/12-12:42:19.332 3 Reusing MANIFEST /home/aathir/.config/google-chrome/Default/Session Storage/MANIFEST-000001
-2023/06/12-12:42:19.333 3 Recovering log #3
-2023/06/12-12:42:19.334 3 Reusing old log /home/aathir/.config/google-chrome/Default/Session Storage/000003.log 
-2023/06/12-13:32:07.072 5 Level-0 table #5: started
-2023/06/12-13:32:07.075 5 Level-0 table #5: 34067 bytes OK
-2023/06/12-13:32:07.078 5 Delete type=0 #3
-2023/06/12-14:33:46.461 5 Level-0 table #7: started
-2023/06/12-14:33:46.466 5 Level-0 table #7: 21269 bytes OK
-2023/06/12-14:33:46.468 5 Delete type=0 #4
+2023/06/12-14:42:10.497 3 Reusing MANIFEST /home/aathir/.config/google-chrome/Default/Session Storage/MANIFEST-000001
+2023/06/12-14:42:10.497 3 Recovering log #6
+2023/06/12-14:42:10.498 3 Reusing old log /home/aathir/.config/google-chrome/Default/Session Storage/000006.log 
+2023/06/12-17:17:45.636 4 Level-0 table #10: started
+2023/06/12-17:17:45.642 4 Level-0 table #10: 17893 bytes OK
+2023/06/12-17:17:45.647 4 Delete type=0 #6

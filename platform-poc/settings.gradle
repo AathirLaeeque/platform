@@ -1,2 +1,2 @@
-rootProject.name = 'PLATFORM-POC'
+rootProject.name = 'platform-poc'
 include 'backendJava', 'frontend'
