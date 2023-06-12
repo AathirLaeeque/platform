@@ -3,13 +3,13 @@
   <context id="">
     <application id="org.gnome.FileRoller.desktop" score="12" last-seen="1686571477"/>
     <application id="gnome-session-properties.desktop" score="1" last-seen="1686331868"/>
-    <application id="google-chrome.desktop" score="751" last-seen="1686573626"/>
+    <application id="google-chrome.desktop" score="769" last-seen="1686573913"/>
     <application id="snap-store_snap-store.desktop" score="90" last-seen="1686569802"/>
-    <application id="intellij-idea-community_intellij-idea-community.desktop" score="133" last-seen="1686573639"/>
+    <application id="intellij-idea-community_intellij-idea-community.desktop" score="152" last-seen="1686573943"/>
     <application id="org.gnome.Shell.PortalHelper.desktop" score="5" last-seen="1686554276"/>
     <application id="org.gnome.Calendar.desktop" score="0" last-seen="1686331841"/>
     <application id="update-manager.desktop" score="1" last-seen="1686331870"/>
-    <application id="org.gnome.Nautilus.desktop" score="26" last-seen="1686573391"/>
+    <application id="org.gnome.Nautilus.desktop" score="26" last-seen="1686573861"/>
     <application id="org.gnome.Totem.desktop" score="3" last-seen="1686298555"/>
     <application id="xdg-desktop-portal-gnome.desktop" score="0" last-seen="1686332084"/>
     <application id="gnome-initial-setup.desktop" score="2" last-seen="1686298350"/>
