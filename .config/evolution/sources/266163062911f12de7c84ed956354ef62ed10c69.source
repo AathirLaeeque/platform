@@ -1,0 +1,29 @@
+[Data Source]
+DisplayName=aathir.laeeque@leucinetech.com
+Enabled=true
+Parent=db97af1ebddc47e897a7802678cec15b3d0af12e
+
+[Mail Submission]
+SentFolder=folder://local/Sent
+TransportUid=cbbe1acc0ec27cf67ba3df2b5f3752079269a5c1
+RepliesToOriginFolder=false
+UseSentFolder=true
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://local/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=
+StartBottom=inconsistent
+TopSignature=inconsistent
+Language=
+
+[Mail Identity]
+Address=aathir.laeeque@leucinetech.com
+Aliases=
+Name=
+Organization=
+ReplyTo=
+SignatureUid=none

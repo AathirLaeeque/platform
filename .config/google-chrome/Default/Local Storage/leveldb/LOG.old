@@ -1,0 +1,33 @@
+2023/06/12-12:42:19.238 3 Reusing MANIFEST /home/aathir/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2023/06/12-12:42:19.239 3 Recovering log #3
+2023/06/12-12:42:19.240 3 Reusing old log /home/aathir/.config/google-chrome/Default/Local Storage/leveldb/000003.log 
+2023/06/12-12:56:41.164 5 Level-0 table #5: started
+2023/06/12-12:56:41.169 5 Level-0 table #5: 22200 bytes OK
+2023/06/12-12:56:41.173 5 Delete type=0 #3
+2023/06/12-13:07:39.514 5 Level-0 table #7: started
+2023/06/12-13:07:39.518 5 Level-0 table #7: 45962 bytes OK
+2023/06/12-13:07:39.525 5 Delete type=0 #4
+2023/06/12-13:08:33.274 5 Level-0 table #9: started
+2023/06/12-13:08:33.280 5 Level-0 table #9: 45313 bytes OK
+2023/06/12-13:08:33.283 5 Delete type=0 #6
+2023/06/12-13:15:34.290 5 Level-0 table #11: started
+2023/06/12-13:15:34.295 5 Level-0 table #11: 16226 bytes OK
+2023/06/12-13:15:34.297 5 Delete type=0 #8
+2023/06/12-13:25:41.828 5 Level-0 table #13: started
+2023/06/12-13:25:41.833 5 Level-0 table #13: 16505 bytes OK
+2023/06/12-13:25:41.841 5 Delete type=0 #10
+2023/06/12-13:33:24.171 3 Level-0 table #15: started
+2023/06/12-13:33:24.177 3 Level-0 table #15: 39783 bytes OK
+2023/06/12-13:33:24.181 3 Delete type=0 #12
+2023/06/12-13:33:24.182 3 Compacting 4@0 + 1@1 files
+2023/06/12-13:33:24.190 3 Generated table #16@0: 178 keys, 125130 bytes
+2023/06/12-13:33:24.190 3 Compacted 4@0 + 1@1 files => 125130 bytes
+2023/06/12-13:33:24.192 3 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/06/12-13:33:24.194 3 Delete type=2 #11
+2023/06/12-13:33:24.194 3 Delete type=2 #13
+2023/06/12-13:33:24.194 3 Delete type=2 #9
+2023/06/12-13:33:24.194 3 Delete type=2 #7
+2023/06/12-13:33:24.194 3 Delete type=2 #15
+2023/06/12-13:45:24.172 3 Level-0 table #18: started
+2023/06/12-13:45:24.200 3 Level-0 table #18: 21385 bytes OK
+2023/06/12-13:45:24.206 3 Delete type=0 #14

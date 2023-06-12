@@ -1,0 +1,9 @@
+2023/06/12-12:42:19.237 a8e Reusing MANIFEST /home/aathir/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2023/06/12-12:42:19.237 a8e Recovering log #3
+2023/06/12-12:42:19.238 a8e Reusing old log /home/aathir/.config/google-chrome/Default/Sync Data/LevelDB/000003.log 
+2023/06/12-12:56:47.737 a73 Level-0 table #5: started
+2023/06/12-12:56:47.742 a73 Level-0 table #5: 116007 bytes OK
+2023/06/12-12:56:47.744 a73 Delete type=0 #3
+2023/06/12-14:21:15.559 a23 Level-0 table #7: started
+2023/06/12-14:21:15.562 a23 Level-0 table #7: 106735 bytes OK
+2023/06/12-14:21:15.565 a23 Delete type=0 #4

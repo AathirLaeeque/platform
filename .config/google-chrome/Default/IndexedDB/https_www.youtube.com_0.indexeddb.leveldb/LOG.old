@@ -1,0 +1,7 @@
+2023/06/12-14:20:57.646 a23 Reusing MANIFEST /home/aathir/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/06/12-14:20:57.647 a23 Recovering log #3
+2023/06/12-14:20:57.647 a23 Reusing old log /home/aathir/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000003.log 
+2023/06/12-14:25:47.624 a24 Level-0 table #5: started
+2023/06/12-14:25:47.627 a24 Level-0 table #5: 71282 bytes OK
+2023/06/12-14:25:47.629 a24 Delete type=0 #3
+2023/06/12-14:25:47.630 a24 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
