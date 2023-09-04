@@ -1,0 +1,111 @@
+plugins {
+  id 'org.liquibase.gradle' version '2.1.1'
+  id 'org.springframework.boot' version '2.7.2'
+  id 'io.spring.dependency-management' version '1.0.12.RELEASE'
+  id 'org.ajoberstar.grgit' version '4.1.1'
+  id 'java'
+}
+
+apply plugin: 'org.liquibase.gradle'
+
+group 'com.leucine.dwi'
+version '4.0.1'
+description = 'Digital Work Instructions'
+sourceCompatibility = '17'
+
+configurations {
+  compileOnly {
+    extendsFrom annotationProcessor
+  }
+  compile.exclude module: 'spring-boot-starter-tomcat'
+  compile.exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+  implementation.exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+}
+
+bootJar {
+  exclude('*.properties', 'logback.xml')
+}
+
+dependencies {
+  implementation group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '2.7.2'
+  implementation group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.7.2'
+  implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.7.2'
+  implementation group: 'org.springframework.boot', name: 'spring-boot-starter-undertow', version: '2.7.2'
+  implementation group: 'org.springframework.boot', name: 'spring-boot-starter-mail', version: '2.7.2'
+  implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.7.2'
+  implementation group: 'org.springframework.boot', name: 'spring-boot-starter-freemarker', version: '2.7.2'
+  implementation group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.7.2'
+  implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.7.2'
+  implementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.7.2'
+
+  implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.9'
+  implementation group: 'org.springdoc', name: 'springdoc-openapi-data-rest', version: '1.6.9'
+
+  implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.7.2'
+  implementation group: 'com.vladmihalcea', name: 'hibernate-types-52', version: '2.14.0'
+  runtimeOnly group: 'org.postgresql', name: 'postgresql', version: '42.3.6'
+
+  liquibaseRuntime group: 'org.liquibase', name: 'liquibase-core', version: '4.14.0'
+  liquibaseRuntime group: 'org.postgresql', name: 'postgresql', version: '42.3.6'
+  liquibaseRuntime group: 'ch.qos.logback', name: 'logback-core', version: '1.2.11'
+  liquibaseRuntime group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.11'
+  implementation group: 'org.liquibase', name: 'liquibase-core', version: '4.14.0'
+
+  implementation group: 'com.leucine.commons', name: 'id', version: '1.0.0'
+
+  implementation group: 'org.codehaus.janino', name: 'janino', version: '3.1.7'
+
+  implementation group: 'org.apache.poi', name: 'poi', version: '5.2.3'
+  implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.2.3'
+
+  implementation group: 'org.springframework.boot', name: 'spring-boot-starter-quartz', version: '3.0.0'
+  implementation group: 'org.mnode.ical4j', name: 'ical4j', version: '3.2.12'
+
+  compileOnly group: 'org.mapstruct', name: 'mapstruct', version: '1.4.1.Final'
+  annotationProcessor group: 'org.mapstruct', name: 'mapstruct-processor', version: '1.4.1.Final'
+  testAnnotationProcessor group: 'org.mapstruct', name: 'mapstruct-processor', version: '1.4.1.Final'
+
+  testImplementation group: 'org.mockito', name: 'mockito-core', version: '4.2.0'
+}
+
+tasks.withType(JavaCompile) {
+  options.compilerArgs = [
+    '-Amapstruct.defaultComponentModel=spring',
+    '-Amapstruct.unmappedTargetPolicy=IGNORE',
+    '-Amapstruct.suppressGeneratorTimestamp=true',
+  ]
+}
+
+import groovy.json.JsonOutput;
+
+task getVersions(dependsOn: processResources) {
+  doLast {
+    boolean success = new File("$buildDir/resources/main/version.json").delete()
+    def json = JsonOutput.toJson([version: project.version.toString(), branch: grgit.branch.current().name, commit: grgit.head().id])
+    new File("$buildDir/resources/main/version.json").write(json)
+  }
+}
+
+classes {
+  dependsOn getVersions
+}
+
+def application = new Properties()
+file('src/main/resources/application.properties').withInputStream { application.load(it) }
+
+def liquibaseProp = new Properties()
+file('src/main/resources/liquibase.properties').withInputStream { liquibaseProp.load(it) }
+
+liquibase {
+  activities {
+    main {
+      changeLogFile application.getProperty('liquibase.change-log')
+      url liquibaseProp.getProperty('url')
+      username liquibaseProp.getProperty('username')
+      password liquibaseProp.getProperty('password')
+    }
+  }
+  runList = 'main'
+}
+
+apply plugin: 'org.liquibase.gradle'

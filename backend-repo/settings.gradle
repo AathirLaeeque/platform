@@ -1,0 +1,4 @@
+rootProject.name = 'dwi'
+
+include 'backend'
+

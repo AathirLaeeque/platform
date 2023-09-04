@@ -1,0 +1,49 @@
+version: "3.8"
+services:
+
+  cleen-dwi-db:
+    container_name: cleen-dwi-db
+    image: postgres:11-alpine
+    ports:
+      - 8081:5432
+    hostname: cleen-dwi-db
+    networks:
+      - cleen_dwi_network
+    volumes:
+      - cleen-dwi-db-data:/var/lib/postgresql/data
+      - ./postgresql/postgresql.conf:/etc/postgresql/postgresql.conf
+    environment:
+      - POSTGRES_DB=cleen_dwi
+      - POSTGRES_USER=cleen_dwi
+      - POSTGRES_PASSWORD=cleen_dwi
+    command: postgres -c config_file=/etc/postgresql/postgresql.conf
+    restart: unless-stopped
+    healthcheck:
+      test: pg_isready -U postgres
+      interval: 1m
+      timeout: 10s
+      retries: 2
+
+  cleen-dwi:
+    container_name: cleen-dwi
+    image: leucine.azurecr.io/cleen-dwi/backend:latest
+    ports:
+      - 8080:8080
+    hostname: cleen-dwi
+    networks:
+      - cleen_dwi_network
+    environment:
+      - SPRING_APPLICATION_JSON={"server":{"port":8080},"logging":{"level":"info"},"datasource":{"host":"cleen-dwi-db","port":"5432","username":"cleen_dwi","password":"cleen_dwi"}}
+    restart: unless-stopped
+    #    healthcheck:
+    #      test: curl -f http://localhost:8080/demo/profile || exit 1
+    #      interval: 1m
+    #      timeout: 10s
+    #      retries: 2
+    depends_on:
+      - cleen-dwi-db
+
+networks:
+  cleen_dwi_network:
+volumes:
+  cleen-dwi-db-data:

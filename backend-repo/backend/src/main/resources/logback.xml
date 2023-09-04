@@ -1,0 +1,85 @@
+<!--TODO Add logic for correlation id in logs-->
+<configuration debug="true" scan="true" scanPeriod="30 seconds">
+    <!-- Use when application.properties is not a part of executable jar or for local environment -->
+    <property resource="application.properties"/>
+
+    <!-- Use when application.properties is not a part of executable jar -->
+    <!--    <property file="<PATH_TO>/application.properties"/>-->
+
+    <property name="LOG_PATH" value="${logging.file.path:-log}"/>
+    <property name="LOG_ARCHIVED_PATH" value="${logging.file.path:-log}/archived"/>
+    <property name="LOG_LEVEL" value="${logging.level:-debug}"/>
+
+    <!-- definition of appender STDOUT for writing logs to console-->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS,Asia/Kolkata} [%thread] %highlight(%-5level) [%logger{45}] %message%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- definition of appender FILE for writing log to app.log file-->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/app.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${LOG_ARCHIVED_PATH}/app-%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <!-- each file should be at most 25MB, keep 365 days worth of history, but at most 20GB -->
+            <maxFileSize>25MB</maxFileSize>
+            <maxHistory>365</maxHistory>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS,Asia/Kolkata} [%thread] %-5level [%logger{45}] %message%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- definition of appender SQL for writing log to sql.log file with appropriate filter for logging SQL queries.-->
+    <appender name="SQL" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/sql.log</file>
+        <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+            <evaluator>
+                <expression>return message.contains("Releasing statement");</expression>
+            </evaluator>
+            <OnMatch>ACCEPT</OnMatch>
+            <OnMismatch>DENY</OnMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${LOG_ARCHIVED_PATH}/sql-%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <!-- each file should be at most 25MB, keep 365 days worth of history, but at most 20GB -->
+            <maxFileSize>25MB</maxFileSize>
+            <maxHistory>365</maxHistory>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS,Asia/Kolkata} [%thread] %-5level [%logger{45}] %message%n</pattern>
+        </encoder>
+      <encoder>
+        <charset>UTF-8</charset>
+        <pattern>%replace(%msg){'\n', ' '}%n</pattern>
+      </encoder>
+    </appender>
+    <!-- definition of appender ASYNC-SQL for writing SQL appender asynchronously-->
+    <appender name="ASYNC-SQL" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="SQL"/>
+    </appender>
+
+    <logger name="org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl" level="trace" additivity="false">
+        <appender-ref ref="ASYNC-SQL"/>
+    </logger>
+    <logger name="com.leucine" level="${LOG_LEVEL}" additivity="false">
+        <appender-ref ref="FILE"/>
+<!--        <appender-ref ref="STDOUT"/>-->
+    </logger>
+    <logger name="com.leucine" level="${LOG_LEVEL}" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+    <root level="${logging.level.root:-warn}">
+        <appender-ref ref="FILE"/>
+<!--        <appender-ref ref="STDOUT"/>-->
+    </root>
+
+</configuration>

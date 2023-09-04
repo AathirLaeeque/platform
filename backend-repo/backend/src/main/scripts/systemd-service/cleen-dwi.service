@@ -1,0 +1,31 @@
+# Steps:
+# - update the User
+# - update the absolute location of WorkingDirectory, ExecStart, ExecStop & ExecReload
+# - uncomment the line "After=postgresql.service" if database is installed locally
+# - paste the file to /etc/systemd/system directory
+# - reload the systemctl daemon using "sudo systemctl daemon-reload"
+
+[Unit]
+Description=CLEEN DWI Service
+#After=postgresql.service
+# uncomment the above line if database is installed locally
+
+[Service]
+User=ubuntu
+
+# change this to your workspace
+WorkingDirectory=/home/ubuntu/cleen-dwi/backend
+
+# path to executable.
+# executable is a bash script which calls jar file
+ExecStart=/bin/bash /home/ubuntu/cleen-dwi/backend/start.sh
+ExecStop=/bin/bash /home/ubuntu/cleen-dwi/backend/stop.sh
+ExecReload=/bin/bash /home/ubuntu/cleen-dwi/backend/restart.sh
+
+SuccessExitStatus=143
+TimeoutStopSec=10
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
