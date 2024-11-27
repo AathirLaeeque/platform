@@ -1,9 +1,0 @@
-2023/06/12-14:42:10.378 3 Reusing MANIFEST /home/aathir/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
-2023/06/12-14:42:10.379 3 Recovering log #17
-2023/06/12-14:42:10.380 3 Reusing old log /home/aathir/.config/google-chrome/Default/Local Storage/leveldb/000017.log 
-2023/06/12-15:59:27.956 4 Level-0 table #21: started
-2023/06/12-15:59:27.962 4 Level-0 table #21: 14767 bytes OK
-2023/06/12-15:59:27.968 4 Delete type=0 #17
-2023/06/12-16:47:17.724 4 Level-0 table #23: started
-2023/06/12-16:47:17.730 4 Level-0 table #23: 16006 bytes OK
-2023/06/12-16:47:17.733 4 Delete type=0 #20

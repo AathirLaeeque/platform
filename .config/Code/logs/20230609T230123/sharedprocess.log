@@ -1,3 +1,0 @@
-2023-06-09 23:01:24.969 [info] Started initializing default profile extensions in extensions installation folder. file:///home/aathir/.vscode/extensions
-2023-06-09 23:01:25.137 [warning] Failed to create default profile extensions manifest in extensions installation folder. file:///home/aathir/.vscode/extensions Unable to create file 'vscode-userdata:/home/aathir/.vscode/extensions/extensions.json' that already exists when overwrite flag is not set
-2023-06-09 23:01:25.137 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/aathir/.vscode/extensions
